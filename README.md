@@ -6,5 +6,4 @@
 
 U-Net builds on a previous architecture called the Fully Convolutional Network, or FCN, which replaces the dense layers found in a typical CNN with a transposed convolution layer that upsamples the feature map back to the size of the original input image, while preserving the spatial information. This is necessary because the dense layers destroy spatial information (the "where" of the image), which is an essential part of image segmentation tasks. An added bonus of using transpose convolutions is that the input size no longer needs to be fixed, as it does when dense layers are used. 
 
-Unfortunately, the final feature layer of the FCN suffers from information loss due to downsampling too much. It then becomes difficult to upsample after so much information has been lost, causing an output that looks rough. 
-
+[<img target="_blank" src="https://miro.medium.com/max/1200/1*f7YOaE4TWubwaFF7Z1fzNw.png" width=400>](https://towardsdatascience.com/unet-line-by-line-explanation-9b191c76baf5)
